@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="18" fill="#0b0b0b"/>
+  <g transform="translate(10,10)">
+    <path d="M10 80 L50 20 L90 80 Z" fill="#ff6a00"/>
+    <rect x="44" y="70" width="32" height="8" rx="3" fill="#0b0b0b"/>
+  </g>
+  <text x="60" y="106" font-family="Inter,Arial" font-size="10" fill="#ff6a00" text-anchor="middle" font-weight="700">OBERIO</text>
+</svg>

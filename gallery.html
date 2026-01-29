@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Gallery – Oberio Construction" />
+  <title>Gallery — Oberio Construction</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+  <a class="brand" href="index.html"><img src="assets/images/logo.svg" alt="logo" class="logo"/> <span>Oberio Construction</span></a>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="offers.html">Offers</a>
+          <a class="active" href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="page-hero">
+        <h1>Project Gallery</h1>
+        <p>High-quality images from our field work and completed projects.</p>
+      </section>
+
+      <section class="gallery-grid" id="galleryGrid">
+        <!-- thumbnails filled by JS -->
+      </section>
+      <section class="video-showcase container">
+        <h3>Project Showcase</h3>
+        <video controls class="showcase-video" poster="assets/images/project-placeholder.jpg">
+          <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+        </video>
+      </section>
+
+      <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose">×</button>
+        <img id="lightboxImg" src="" alt="Preview" />
+        <p id="lightboxCaption"></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+    <a class="brand" href="index.html"><img src="assets/images/logo.svg" alt="logo" class="logo"/> <span>Oberio Construction</span></a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+  <p>© <span id="year4"></span> Oberio Construction. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Projects – Oberio Construction" />
+  <title>Projects — Oberio Construction</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+  <a class="brand" href="index.html"><img src="assets/images/logo.svg" alt="logo" class="logo"/> <span>Oberio Construction</span></a>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a class="active" href="projects.html">Projects</a>
+          <a href="offers.html">Offers</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="page-hero">
+        <h1>Our Projects</h1>
+        <p>Browse ongoing and completed projects. Filter by status and sector.</p>
+      </section>
+
+      <section class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ongoing">Ongoing</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+        <select id="sectorFilter">
+          <option value="all">All Sectors</option>
+          <option value="commercial">Commercial</option>
+          <option value="residential">Residential</option>
+          <option value="infrastructure">Infrastructure</option>
+        </select>
+      </section>
+
+      <section class="projects-grid" id="projectsGrid">
+        <!-- Dynamic project cards inserted by JS -->
+      </section>
+
+      <div id="projectModal" class="modal" aria-hidden="true">
+        <div class="modal-content card">
+          <button id="modalClose" class="modal-close">×</button>
+          <h3 id="modalTitle"></h3>
+          <img id="modalImg" src="assets/images/project-placeholder.jpg" alt="" style="width:100%;border-radius:8px;margin:8px 0"/>
+          <p id="modalDesc"></p>
+          <div class="modal-meta muted" id="modalMeta"></div>
+        </div>
+      </div>
+
+      <template id="projectCardTpl">
+        <article class="project-card card">
+          <img class="project-thumb" src="assets/images/project-placeholder.jpg" alt="project"/>
+          <div class="project-body">
+            <h3 class="project-title"></h3>
+            <p class="project-desc"></p>
+            <div class="project-meta">
+              <span class="status"></span>
+              <span class="sector"></span>
+            </div>
+          </div>
+        </article>
+      </template>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+    <a class="brand" href="index.html"><img src="assets/images/logo.svg" alt="logo" class="logo"/> <span>Oberio Construction</span></a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+  <p>© <span id="year2"></span> Oberio Construction. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
